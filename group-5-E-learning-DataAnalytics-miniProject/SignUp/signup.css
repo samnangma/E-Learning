@@ -1,0 +1,65 @@
+.form-card{
+    display: grid;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 20px;
+    animation: frombottom .7s ease-out;
+}
+
+@keyframes frombottom {
+    from {
+        transform: scale(0);
+        margin-bottom: 100%;
+    }to{
+        transform: scale(1);
+        margin-bottom: 0;
+    }
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #7F56D8;
+}
+form {
+    display: grid; 
+    gap: 1rem; 
+}
+input {
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: #D9D9D9;
+    color: black;
+}
+.line-style {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.line {
+    width: 40px;
+    height: 8px;
+    background-color: gray;
+    border-radius: 10px;
+}
+.line:nth-child(2n+1){
+    width: 20px;
+}
+button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #7F56D8;
+    color: white;
+    cursor: pointer;
+}
